@@ -4,10 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <header>
-      <div class="header-container">
+    <header class="header">
+      <div class="container header-container">
         <a class="link logo" href="index.html">Brandname</a>
         <nav class="navigation">
           <ul class="list nav-list">
@@ -19,9 +35,9 @@
         </nav>
         <div class="log-in-btns">
           <ul class="list button-list">
-            <li><button type="button">Login</button></li>
+            <li><button class="login-btn" type="button">Login</button></li>
             <li>
-              <button type="button">
+              <button class="head-join-btn" type="button">
                 JOIN US
                 <svg class="login-arrow">
                   <use href="./images/icons/icons.svg#icon-login-arrow"></use>
@@ -35,31 +51,49 @@
     <main>
       <section class="first-section">
         <div class="container first-container">
+             
           <h5 class="main-fifth-heading">Join Us</h5>
           <h1 class="main-first-heading">HIGH QUALITY COURSES</h1>
           <h4 class="main-fourth-heading">
             Our goal is to make online education work for everyone
           </h4>
           <button class="first-btn" type="button">Join Us</button>
-
-          <ul class="list first-list">
-            <li class="first-list-item">
-              <h3 class="first-list-heading">Lifetime access</h3>
-              <p class="first-list-p">
+         
+        </div>
+      </section>
+       
+        <div class="tree-section">
+          <ul class="list three-list">
+            <li class="three-list-item">
+              <div class="three-icons-container">
+                <svg class="three-icons">
+                  <use href="./images/icons/icons.svg#icon-computer"></use>
+                </svg>
+              </div>
+              <h3 class="three-list-heading">Lifetime access</h3>
+              <p class="three-list-p">
                 The gradual accumulation of information about atomic and
                 small-scale behaviour...
               </p>
             </li>
-            <li>
-              <h3 class="first-list-heading">Training Courses</h3>
-              <p class="first-list-p">
+            <li class="three-list-item">
+              <div class="three-list-container">
+                <svg class="three-icons">
+                  <use href="./images/icons/icons.svg#icon-training"></use>
+                </svg>
+              </div>
+              <h3 class="three-list-heading">Training Courses</h3>
+              <p class="three-list-p">
                 The gradual accumulation of information about atomic and
                 small-scale behaviour...
               </p>
             </li>
-            <li>
-              <h3 class="first-list-heading">Expert instruction</h3>
-              <p class="first-list-p">
+            <li class="three-list-item">
+              <div class="three-list-container">
+                <svg class="three-icons"><use href="./images/icons/icons.svg#icon-book"></use></svg>
+              </div>
+              <h3 class="three-list-heading">Expert instruction</h3>
+              <p class="three-list-p">
                 The gradual accumulation of information about atomic and
                 small-scale behaviour...
               </p>
