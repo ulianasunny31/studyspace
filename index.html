@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>StudySpace</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -24,7 +24,7 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <a class="link logo" href="index.html">Brandname</a>
+        <a class="link logo" href="index.html">StudySpace</a>
         <nav class="navigation">
           <ul class="list nav-list">
             <li><a class="link nav-link" href="index.html">Home</a></li>
@@ -51,58 +51,106 @@
     <main>
       <section class="first-section">
         <div class="container first-container">
-             
-          <h5 class="main-fifth-heading">Join Us</h5>
-          <h1 class="main-first-heading">HIGH QUALITY COURSES</h1>
-          <h4 class="main-fourth-heading">
-            Our goal is to make online education work for everyone
-          </h4>
-          <button class="first-btn" type="button">Join Us</button>
-         
+          <div class="middle-text-container">
+            <h5 class="main-fifth-heading">Join Us</h5>
+            <h1 class="main-first-heading">HIGH QUALITY COURSES</h1>
+            <h4 class="main-fourth-heading">
+              Our goal is to make online education work for everyone
+            </h4>
+            <button class="first-btn" type="button">Join Us</button>
+          </div>
+
+          <div class="tree-items-container">
+            <ul class="list three-list">
+              <li class="three-list-item">
+                <div class="three-icons-container">
+                  <svg class="three-icons" width="32px" height="32px">
+                    <use href="./images/icons/icons.svg#icon-computer"></use>
+                  </svg>
+                </div>
+                <h3 class="three-list-heading">Lifetime access</h3>
+                <p class="three-list-p">
+                  Gain unlimited access to our diverse range of training courses
+                  - learn at your own pace and stay up-to-date with the
+                  knowledge.
+                </p>
+              </li>
+              <li class="three-list-item">
+                <div class="three-list-container">
+                  <div class="three-icons-container">
+                    <svg class="three-icons" width="32px" height="32px">
+                      <use href="./images/icons/icons.svg#icon-training"></use>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="three-list-heading">Training Courses</h3>
+                <p class="three-list-p">
+                  Immerse yourself in our comprehensive training courses
+                  designed to equip you with practical skills and knowledge.
+                </p>
+              </li>
+              <li class="three-list-item">
+                <div class="three-list-container">
+                  <div class="three-icons-container">
+                    <svg class="three-icons" width="32px" height="32px">
+                      <use href="./images/icons/icons.svg#icon-book"></use>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="three-list-heading">Expert instruction</h3>
+                <p class="three-list-p">
+                  Learn from the best in the industry through expert instruction
+                  that goes beyond the ordinary.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-       
-        <div class="tree-section">
-          <ul class="list three-list">
-            <li class="three-list-item">
-              <div class="three-icons-container">
-                <svg class="three-icons">
-                  <use href="./images/icons/icons.svg#icon-computer"></use>
-                </svg>
-              </div>
-              <h3 class="three-list-heading">Lifetime access</h3>
-              <p class="three-list-p">
-                The gradual accumulation of information about atomic and
-                small-scale behaviour...
-              </p>
-            </li>
-            <li class="three-list-item">
-              <div class="three-list-container">
-                <svg class="three-icons">
-                  <use href="./images/icons/icons.svg#icon-training"></use>
-                </svg>
-              </div>
-              <h3 class="three-list-heading">Training Courses</h3>
-              <p class="three-list-p">
-                The gradual accumulation of information about atomic and
-                small-scale behaviour...
-              </p>
-            </li>
-            <li class="three-list-item">
-              <div class="three-list-container">
-                <svg class="three-icons"><use href="./images/icons/icons.svg#icon-book"></use></svg>
-              </div>
-              <h3 class="three-list-heading">Expert instruction</h3>
-              <p class="three-list-p">
-                The gradual accumulation of information about atomic and
-                small-scale behaviour...
-              </p>
-            </li>
-          </ul>
+
+      <section class="watch-section">
+        <div class="container watch-container">
+          <div class="watch-picture-container">
+            <img
+              class="watch-picture"
+              src="./images/smiley-woman.jpg"
+              alt="A woamn-student smiling"
+            />
+          </div>
+          <div class="watch-text-container">
+            <h2 class="watch-second-head">Watch our Courses</h2>
+            <p class="watch-p">
+              Explore an enriching learning experience by immersing yourself in
+              our captivating array of educational courses.
+            </p>
+            <a class="link watch-link" href="">
+              Learn More
+              <svg class="watch-icon" width="14" height="20">
+                <use href="./images/icons/icons.svg#icon-learn-more"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
-      <section class="watch-section"></section>
-      <section class="client-section"></section>
+      <section class="client-section">
+        <div class="client-container">
+          <div class="client-text-container">
+            <h2 class="client-second-head">Every Client Matters</h2>
+            <p class="client-p">
+              At our institution, we treat every client as a valued individual,
+              ensuring personalized attention and support throughout your
+              educational journey.
+            </p>
+            <a class="link client-link" href="">
+              Learn More
+              <svg class="client-icon" width="14" height="20">
+                <use href="./images/icons/icons.svg#icon-learn-more"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="video-container"></div>
+        </div>
+      </section>
       <section class="education-section"></section>
       <section class="popular-section"></section>
       <section class="feedback-section"></section>
