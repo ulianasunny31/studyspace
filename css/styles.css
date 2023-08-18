@@ -302,7 +302,7 @@ ol {
 
 .three-list-item:focus,
 .three-list-item:hover {
-  background-color: var(--primary-color);
+  background-color: var(--);
 }
 
 .three-list-item:focus .three-list-heading,
