@@ -347,37 +347,37 @@ ol {
   |============================
 */
 
-.watch-container {
+.discover-container {
   display: flex;
   align-items: center;
   padding: 160px 0 100px;
 }
 
-.watch-picture-container {
+.discover-picture-container {
   max-width: 544px;
   margin-right: 100px;
 }
 
-.watch-picture {
+.discover-picture {
   width: 377px;
   height: 440px;
   border-radius: 8px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.watch-picture:hover,
-.watch-picture:focus {
+.discover-picture:hover,
+.discover-picture:focus {
   transform: scale(1.1);
 }
 
-.watch-text-container {
+.discover-text-container {
   display: flex;
   width: 400px;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.watch-link {
+.discover-link {
   color: var(--primary-text-color);
   font-size: 14px;
   font-style: normal;
@@ -390,22 +390,22 @@ ol {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.watch-link:focus,
-.watch-link:hover {
+.discover-link:focus,
+.discover-link:hover {
   color: var(--learn-more);
 }
 
-.watch-icon {
+.discover-icon {
   fill: var(--primary-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.watch-link:focus .watch-icon,
-.watch-link:hover .watch-icon {
+.discover-link:focus .discover-icon,
+.discover-link:hover .discover-icon {
   fill: var(--learn-more);
 }
 
-.watch-second-head {
+.discover-second-head {
   color: var(--text-color);
   font-size: 40px;
   font-style: normal;
@@ -417,7 +417,7 @@ ol {
   width: auto;
 }
 
-.watch-second-head::before {
+.discover-second-head::before {
   content: "";
   position: absolute;
   top: -35px;
@@ -425,7 +425,7 @@ ol {
   width: 94px;
 }
 
-.watch-p {
+.discover-p {
   color: var(--second-text-color);
   font-size: 14px;
   font-style: normal;
@@ -564,7 +564,7 @@ ol {
 
 .product-text-container {
   padding: 30px 15px 10px;
-  min-height: 120px;
+  min-height: 135px;
 }
 
 .product-name {
