@@ -15,6 +15,8 @@
   --learn-more: #a20660;
   --body-back: #f8f6f7;
   --list-text: #2f114a;
+  --overlay-back: #968aa0;
+  --stars: #e0b52f;
 }
 
 body {
@@ -51,6 +53,19 @@ ol {
   max-width: 1046px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /**
@@ -509,6 +524,18 @@ ol {
   |============================
 */
 
+.product-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  margin-bottom: 60px;
+}
+
 .product-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -536,6 +563,7 @@ ol {
 
 .product-text-container {
   padding: 30px 15px 10px;
+  min-height: 120px;
 }
 
 .product-name {
@@ -548,6 +576,7 @@ ol {
 }
 
 .product-p {
+  color: var(--list-text);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -561,7 +590,7 @@ ol {
 }
 
 .p-overlay {
-  background-color: var(--second-text-color);
+  background-color: var(--overlay-back);
   color: var(--light-gray-2);
   font-size: 16px;
   font-style: normal;
@@ -586,4 +615,78 @@ ol {
 .picture-links:hover .p-overlay,
 .picture-links:focus .p-overlay {
   transform: translateY(0%);
+}
+
+/**
+  |============================
+  | FEEDBACK SECTION
+  |============================
+*/
+
+.feedback-container {
+  padding: 200px 50px;
+}
+
+.feed-title {
+  font-size: 30px;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  color: var(--btn-focus-color);
+  line-height: 1.2;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.feedback-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 80px;
+}
+
+.feedback-list-item {
+  width: calc((100% - 20px) / 2);
+  text-align: center;
+}
+
+.feed-photo {
+  border-radius: 40%;
+  margin-bottom: 15px;
+}
+
+.feed-name {
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  color: var(--list-text);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.feed-course {
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  color: var(--learn-more);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.feed-p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--list-text);
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.stars-container {
+  margin-top: 10px;
+}
+
+.feed-icon {
+  fill: var(--stars);
 }
