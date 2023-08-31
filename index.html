@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&family=Ubuntu:ital@1&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -35,19 +35,7 @@
             <li><a class="link nav-link" href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <div class="log-in-btns">
-          <ul class="list button-list">
-            <li><button class="login-btn" type="button">Login</button></li>
-            <li>
-              <button class="head-join-btn" type="button">
-                JOIN US
-                <svg class="login-arrow">
-                  <use href="./images/icons/icons.svg#icon-login-arrow"></use>
-                </svg>
-              </button>
-            </li>
-          </ul>
-        </div>
+        <p class="p-header">Nurturing Knowledge, Unlocking Potential</p>
       </div>
     </header>
 
@@ -60,7 +48,9 @@
             <h4 class="main-fourth-heading">
               Our goal is to make online education work for everyone
             </h4>
-            <button class="first-btn" type="button">Join Us</button>
+            <button data-modal-open class="first-btn" type="button">
+              Join Us
+            </button>
           </div>
 
           <!-- Three-item-section -->
@@ -551,6 +541,8 @@
       </section>
       <section id="contact" class="info-section"></section>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer-container">
         <div class="logo-container">
@@ -609,5 +601,59 @@
         </div>
       </div>
     </footer>
+    <!-- MODAL -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="close-modal">
+          <svg class="close-icon" width="8" height="8">
+            <use href=""></use>
+          </svg>
+        </button>
+        <h3 class="modal-header">Share your contact information, please</h3>
+        <form class="modal-form">
+          <div class="form-element">
+            <label class="label-modal" for="user-name">Name</label>
+            <input
+              class="input-modal"
+              type="text"
+              name="user-name"
+              id="#user-name"
+              required
+            />
+          </div>
+          <div class="form-element">
+            <label class="label-modal" for="user-last-namee">Last name</label>
+            <input
+              class="input-modal"
+              type="text"
+              name="user-name"
+              id="#user-last-name"
+              required
+            />
+          </div>
+          <div class="form-element">
+            <label class="label-modal" for="user-email">Email</label>
+            <input
+              class="input-modal"
+              type="email"
+              name="user-name"
+              id="#user-email"
+              required
+            />
+          </div>
+          <div class="form-element">
+            <label class="label-modal" for="user-phone">Phone</label>
+            <input
+              class="input-modal"
+              type="tel"
+              name="user-phone"
+              id="#user-phone"
+            />
+          </div>
+          <button class="btn-modal" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
